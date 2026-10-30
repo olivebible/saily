@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propulse Training Solutions – POSH, Behavioral Skills and HR Courses</title>
+<meta name="description" content="Customized, activity-based training: POSH and TTT certification, behavioral skills, HR Generalist, HR Analytics and Indian Labour Law. Accredited by NIST and ICIA.">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bar:#0b6b5e;--barink:#fff;--wall:#ece5dd;--in:#fff;--out:#d9fdd3;--ink:#1b2b27;--muted:#667781;--chip:#fff;--chipink:#0b6b5e;--line:#c9d6d1;--wa:#25d366;--tick:#53bdeb;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bar:#17332e;--wall:#0d1816;--in:#1e302c;--out:#0f5a46;--ink:#e8f0ed;--muted:#8fa6a0;--chip:#1e302c;--chipink:#6ee0b5;--line:#2c433e;color-scheme:dark}}
+:root[data-theme="dark"]{--bar:#17332e;--wall:#0d1816;--in:#1e302c;--out:#0f5a46;--ink:#e8f0ed;--muted:#8fa6a0;--chip:#1e302c;--chipink:#6ee0b5;--line:#2c433e;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--wall);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.app{max-width:620px;height:100%;margin:0 auto;display:flex;flex-direction:column;background:var(--wall);box-shadow:0 0 0 1px var(--line)}
+.top{background:var(--bar);color:var(--barink);display:flex;align-items:center;gap:12px;padding:10px 14px;flex:none}
+.av{width:42px;height:42px;border-radius:50%;background:#fff;color:var(--bar);display:grid;place-items:center;font-weight:800;font-size:1.25rem;flex:none}
+.top h1{margin:0;font-size:1.02rem;line-height:1.2}
+.top small{display:block;opacity:.85;font-size:.8rem}
+.top .call{margin-left:auto;color:var(--barink);text-decoration:none;border:1px solid rgba(255,255,255,.5);border-radius:20px;padding:8px 14px;font-size:.9rem;min-height:40px;display:inline-flex;align-items:center}
+.feed{flex:1;overflow-y:auto;padding:14px 12px 8px;display:flex;flex-direction:column;gap:6px;scroll-behavior:smooth}
+.day{align-self:center;background:var(--in);color:var(--muted);font-size:.78rem;padding:4px 12px;border-radius:8px;margin:4px 0 8px}
+.b{max-width:86%;padding:8px 11px 6px;border-radius:10px;background:var(--in);box-shadow:0 1px 1px rgba(0,0,0,.13);overflow-wrap:anywhere}
+.b.out{align-self:flex-end;background:var(--out);border-top-right-radius:2px}
+.b.inn{align-self:flex-start;border-top-left-radius:2px}
+.b p{margin:0 0 6px}.b p:last-of-type{margin-bottom:2px}
+.b strong.t{display:block;color:var(--chipink);font-size:.88rem;margin-bottom:2px}
+.b ul{margin:4px 0 6px;padding-left:1.1rem}.b li{margin:2px 0}
+.b a{color:var(--chipink);font-weight:600}
+.meta{display:block;text-align:right;font-size:.7rem;color:var(--muted)}
+.out .meta::after{content:" ✓✓";color:var(--tick)}
+.dots{display:inline-flex;gap:4px;padding:6px 4px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:bl 1s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,60%,100%{opacity:.3}30%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none}.feed{scroll-behavior:auto}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:6px 12px 10px;flex:none;border-top:1px solid var(--line);background:var(--wall)}
+.chip{font:inherit;font-size:.9rem;color:var(--chipink);background:var(--chip);border:1px solid var(--line);border-radius:18px;padding:8px 14px;min-height:40px;cursor:pointer}
+.chip:hover{border-color:var(--chipink)}
+:focus-visible{outline:3px solid var(--wa);outline-offset:2px}
+.composer{display:flex;gap:8px;padding:8px 10px 10px;background:var(--wall);flex:none;align-items:center}
+.composer input{flex:1;font:inherit;color:var(--ink);background:var(--in);border:0;border-radius:22px;padding:11px 16px;min-height:46px;min-width:0}
+.send{flex:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--wa);color:#073b1c;cursor:pointer;display:grid;place-items:center}
+.send svg{width:22px;height:22px;fill:currentColor}
+.wa{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#073b1c !important;text-decoration:none;font-weight:700 !important;border-radius:8px;padding:10px 12px;margin:6px 0 4px;min-height:44px}
+</style></head><body>
+<div class="app">
+<header class="top">
+<div class="av" aria-hidden="true">P</div>
+<div><h1>Propulse Training Solutions</h1><small>Accredited by NIST &amp; ICIA · Mon–Sat, 8 am–7 pm</small></div>
+<a class="call" href="tel:+917894402066">Call</a>
+</header>
+<main class="feed" id="feed" aria-live="polite"></main>
+<nav class="chips" id="chips" aria-label="Quick questions"></nav>
+<form class="composer" id="form">
+<input id="msg" type="text" placeholder="Type a message for WhatsApp" aria-label="Your message for WhatsApp" autocomplete="off">
+<button class="send" type="submit" aria-label="Send on WhatsApp"><svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></button>
+</form>
+</div>
+<script>
+var NUM="917894402066";
+var WA=function(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)};
+var feed=document.getElementById("feed"),chips=document.getElementById("chips");
+function bubble(cls,html){var d=document.createElement("div");d.className="b "+cls;d.innerHTML=html+'<span class="meta">'+(cls==="out"?"You":"Propulse")+"</span>";feed.appendChild(d);feed.scrollTop=feed.scrollHeight;return d}
+function wa(label,text){return '<a class="wa" href="'+WA(text)+'" target="_blank" rel="noopener">'+label+"</a>"}
+var R={
+"POSH and TTT certification":'<strong class="t">POSH and TTT certification</strong><p>Prevention of Sexual Harassment (POSH) training and Train the Trainer (TTT) certification, accredited by NIST and ICIA.</p><ul><li>For HR teams, committees and managers</li><li>Customized to your workplace</li><li>Activity-based, with real scenarios</li></ul>'+wa("Ask about POSH or TTT on WhatsApp","Hello Propulse, I would like details about POSH / TTT certification."),
+"Behavioral skills":'<strong class="t">Behavioral skills training</strong><p>For corporates and institutions. Sessions are built around your people and your goals.</p><ul><li>Business communication</li><li>Emotional intelligence and workplace behavior</li><li>Team building and group dynamics</li><li>Etiquette, assertiveness and confidence</li><li>Leadership and campus to corporate transition</li></ul>'+wa("Plan a session on WhatsApp","Hello Propulse, I would like to plan a behavioral skills training for our organization."),
+"HR courses":'<strong class="t">HR courses</strong><ul><li><b>HR Generalist</b></li><li><b>HR Analytics</b></li><li><b>Indian Labour Law with HR Compliance</b></li></ul><p>Taught through activities and case work, so you can apply it at work the next day.</p>'+wa("Ask about HR courses on WhatsApp","Hello Propulse, I would like details about your HR courses."),
+"How sessions work":'<strong class="t">How sessions work</strong><p>Every session is <b>customized</b>, <b>activity-based</b> and <b>experiential</b>. We start with your audience and goal, then design exercises, role-plays and discussions around them.</p>',
+"About Saily":'<strong class="t">Saily Talodhikar, founder</strong><p>Certified Corporate, Soft Skills and POSH trainer with 15+ years of experience. Known for an engaging, practical style. Propulse was established in 2024 and has trained 4,000+ professionals.</p><p><a href="https://www.linkedin.com/in/sailytalodhikar" target="_blank" rel="noopener">View her LinkedIn profile</a> · <a href="https://propulse.in.net" target="_blank" rel="noopener">propulse.in.net</a></p>',
+"Contact":'<strong class="t">Contact us</strong><p>Mon–Sat, 8 am–7 pm</p><p>Phone and WhatsApp: <a href="tel:+917894402066">+91 78944 02066</a><br>Email: <a href="mailto:training@propulse.in.net">training@propulse.in.net</a></p>'+wa("Chat on WhatsApp","Hello Propulse, I would like to know more about your training.")
+};
+bubble("inn","<p><b>Welcome to Propulse Training Solutions</b></p><p>We run customized, activity-based, experiential training for corporates, institutions and professionals.</p>");
+bubble("inn","<p><b>What we offer</b></p><ul><li>POSH training and TTT certification (accredited by NIST and ICIA)</li><li>Behavioral skills training</li><li>HR Generalist, HR Analytics, and Indian Labour Law with HR Compliance</li></ul><p>Tap a question below, or message us directly.</p>");
+Object.keys(R).forEach(function(k){var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=k;b.onclick=function(){ask(k)};chips.appendChild(b)});
+var busy=false;
+function ask(k){if(busy)return;busy=true;bubble("out","<p>"+k+"</p>");
+ var d=bubble("inn",'<span class="dots" aria-label="Typing"><i></i><i></i><i></i></span>');
+ setTimeout(function(){d.remove();bubble("inn",R[k]);busy=false},window.matchMedia("(prefers-reduced-motion:reduce)").matches?0:700)}
+document.getElementById("form").addEventListener("submit",function(e){e.preventDefault();var v=document.getElementById("msg").value.trim()||"Hello Propulse, I would like to know more about your training.";window.open(WA(v),"_blank","noopener")});
+</script></body></html>
